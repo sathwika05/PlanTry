@@ -6,10 +6,10 @@
 ## Co-founders
 |Name|Email|
 |----|-----|
+|Sathwika Parshaboina|parshaboina.2@wright.edu|
 |E Jinq Heng|heng.4@wright.edu|
 |Akshata Kanaparthi|kanaparthi.6@wright.edu|
 |Kusuma Kumbham|kumbham.6@wright.edu|
-|Sathwika Parshaboina|parshaboina.2@wright.edu|
 |Sivakrishna Meda|meda.9@wright.edu|
 
 ## Project Description
