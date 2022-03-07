@@ -22,7 +22,7 @@
     * Input expiry date of an item
     * Mark an item as "used" or "trash"
 * Geolocation reminder
-    * Pop up notifaction prompting user to purchase certain staples when they are within _x_ radius of grocery store
+    * Pop up notification prompting user to purchase certain staples when they are within _x_ radius of grocery store
 * Savings helper
     * Browse local coupon and prompt user best time to purchase an item
 * Recipes Recommendation
