@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- drawable/edit.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="16dp"
+    android:height="16dp"
+    android:viewportWidth="16"
+    android:viewportHeight="16">
+    <path
+        android:fillColor="#FFB0D793"
+        android:pathData="M15.05 3.7l-2.6-2.62C12.26 0.9 12.03 0.8 11.8 0.8c-0.25 0-0.48 0.1-0.65 0.27L1.9 10.3l-0.85 3.65c-0.03 0.13-0.02 0.27 0 0.4 0.04 0.13 0.1 0.26 0.18 0.36 0.09 0.11 0.2 0.2 0.32 0.26 0.12 0.05 0.26 0.09 0.4 0.09h0.18l3.69-0.85L15.05 5c0.17-0.18 0.27-0.41 0.27-0.65 0-0.25-0.1-0.48-0.27-0.65Zm-9.68 9.72l-3.45 0.73 0.79-3.39 6.92-6.9 2.66 2.67-6.92 6.9ZM12.9 5.9l-2.67-2.67 1.55-1.54 2.62 2.67-1.5 1.54Z"/>
+</vector>

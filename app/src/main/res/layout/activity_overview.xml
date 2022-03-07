@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="0dp">
+
+            <!-- List -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="10dp">
+
+                <!-- Categories -->
+                <!-- Category 1-->
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/category_fruits"
+                    android:layout_width="150dp"
+                    android:layout_height="54dp"
+                    android:layout_marginRight="20dp"
+                    app:cardBackgroundColor="#B0D793"
+                    app:cardCornerRadius="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto"
+                        android:text="Fruits"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+                <!-- Category 2-->
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/category_drygoods"
+                    android:layout_width="150dp"
+                    android:layout_height="54dp"
+                    android:layout_toRightOf="@+id/category_fruits"
+                    app:cardBackgroundColor="#B0D793"
+                    app:cardCornerRadius="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto"
+                        android:text="Dry Goods"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+                <!-- Category 3-->
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/category_seafoods"
+                    android:layout_width="150dp"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/category_fruits"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    app:cardBackgroundColor="#B0D793"
+                    app:cardCornerRadius="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto"
+                        android:text="Seafoods"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+                <!-- Category 4-->
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/category_vegetables"
+                    android:layout_width="150dp"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/category_drygoods"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/category_seafoods"
+                    app:cardBackgroundColor="#B0D793"
+                    app:cardCornerRadius="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto"
+                        android:text="Vegetables"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+                <!-- Category 5-->
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/category_meats"
+                    android:layout_width="150dp"
+                    android:layout_height="54dp"
+                    android:layout_marginRight="20dp"
+                    app:cardBackgroundColor="#B0D793"
+                    android:layout_below="@+id/category_seafoods"
+                    android:layout_marginTop="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto"
+                        android:text="Meats"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+                <!-- Category 6-->
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/category_dairy"
+                    android:layout_width="150dp"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/category_vegetables"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/category_meats"
+                    app:cardBackgroundColor="#B0D793"
+                    app:cardCornerRadius="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto"
+                        android:text="Dairy"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- TODO: Implement Recycler Grid View for expandable categories -->
+                <!--                <GridView
+                    android:id="@+id/categories_whole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="30dp"
+                    android:scrollbars="none"></GridView>-->
+            </RelativeLayout>
+
+            <!-- Expiration -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="10dp">
+
+                <!-- Header -->
+                <TextView
+                    android:id="@+id/Expiring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Expiring "
+                    android:textColor="#1C0F13"
+                    android:textSize="25sp" />
+                <TextView
+                    android:id="@+id/Soon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/Expiring"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Soon"
+                    android:textSize="25sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="30dp"></androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+
+            <!-- Deals Window -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="10dp">
+
+                <!-- Header -->
+                <TextView
+                    android:id="@+id/Great"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Great "
+                    android:textColor="#1C0F13"
+                    android:textSize="25sp" />
+                <TextView
+                    android:id="@+id/deals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/Great"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Deals"
+                    android:textSize="25sp" />
+
+                <!-- Store Buttons -->
+                <HorizontalScrollView
+                    android:id="@+id/household_member"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deals"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/store_dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/frame_store1"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginEnd="17dp"
+                                android:innerRadius="0dp"
+                                android:shape="ring"
+                                app:cardCornerRadius="40dp"
+                                app:cardElevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/dp_store1"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/costco" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/frame_store2"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginEnd="17dp"
+                                android:innerRadius="0dp"
+                                android:shape="ring"
+                                app:cardCornerRadius="40dp"
+                                app:cardElevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/dp_store2"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/wholefoods" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/frame_store3"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginEnd="17dp"
+                                android:innerRadius="0dp"
+                                android:shape="ring"
+                                app:cardCornerRadius="40dp"
+                                app:cardElevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/dp_store3"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/meijer" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/frame_store4"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginEnd="17dp"
+                                android:innerRadius="0dp"
+                                android:shape="ring"
+                                app:cardCornerRadius="40dp"
+                                app:cardElevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/dp_store4"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/walmart" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/frame_store5"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:innerRadius="0dp"
+                                android:shape="ring"
+                                app:cardCornerRadius="40dp"
+                                app:cardElevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/dp_store5"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kroger" />
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- TODO: Bottom nav bar: currently not clickable, might need on path listener -->
+    <!-- Bottom Nav Bar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp">
+
+        <!-- Main Frame -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/btm_nav_complete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="40dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            &lt;!&ndash; Nav Buttons &ndash;&gt;
+            <ImageButton
+                android:id="@+id/nav_maps"
+                android:layout_width="30sp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFF"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_nav_maps" />
+
+            <ImageButton
+                android:id="@+id/nav_list"
+                android:layout_width="30sp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFF"
+                android:src="@drawable/ic_nav_list" />
+
+            <ImageButton
+                android:id="@+id/nav_recipes"
+                android:layout_width="30sp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFF"
+                android:src="@drawable/ic_nav_recipe" />
+
+            <ImageButton
+                android:id="@+id/nav_notification"
+                android:layout_width="30sp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFF"
+                android:src="@drawable/ic_nav_notification" />
+        </LinearLayout>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="35dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".DairyList">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/work_sans"
+            android:textSize="16sp"
+            android:text="PRODUCT NAME:"
+            />
+
+        <EditText
+            android:id="@+id/name_addItem"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/work_sans"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="EXPIRY DATE"/>
+
+        <DatePicker
+            android:id="@+id/picker_expiry_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_staples"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/work_sans"
+            android:textSize="16sp"
+            android:text="MARK AS STAPLES?   "
+            android:gravity="right|center"
+            android:layoutDirection="rtl"
+            android:onClick="onCheckBoxClicked"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:background="#133B12"
+            android:text="Add item"
+            android:textColor="#fff" />
+
+        <!--Cancel-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancel_addItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="Cancel" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

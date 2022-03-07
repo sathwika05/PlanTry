@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="50dp"
+    android:layout_marginStart="43dp"
+    android:layout_marginEnd="43dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".DairyList"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/category_name"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa"
+            android:text="Category"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/emptyList_lbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textAlignment="center"
+            android:layout_below="@+id/category_name"
+            android:fontFamily="@font/comfortaa"
+            android:textSize="20sp"
+            android:text=""/>
+
+        <ImageButton
+            android:id="@+id/add_item"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/category_name"
+            android:background="#0000FFFF"
+            android:src="@drawable/ic_add_item"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/search_item"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/add_item"
+            android:background="#0000FFFF"
+            android:src="@drawable/ic_search"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/edit_item"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/search_item"
+            android:background="#0000FFFF"
+            android:src="@drawable/ic_edit"></ImageButton>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/category_name"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

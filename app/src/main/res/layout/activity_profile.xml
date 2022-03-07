@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingTop="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="10dp">
+
+                <!--TODO: Scrolling users bar-->
+
+                <TextView
+                    android:id="@+id/displayName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans"
+                    android:text="SampleUser's"
+                    android:textColor="#1C0F13"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/household_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/displayName"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Household"
+                    android:textSize="32sp" />
+
+                <!-- add household user button -->
+                <ImageView
+                    android:id="@+id/add_household"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="191dp"
+                    android:layout_marginTop="54dp"
+                    android:src="@drawable/invite" />
+
+                <!-- edit household user button -->
+                <ImageView
+                    android:id="@+id/edit_household"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="213dp"
+                    android:layout_marginTop="54dp"
+                    android:src="@drawable/edit" />
+
+                <!-- join new household button -->
+                <ImageView
+                    android:id="@+id/join_household"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="235dp"
+                    android:layout_marginTop="54dp"
+                    android:src="@drawable/household" />
+
+                <!-- Household Members -->
+                <HorizontalScrollView
+                    android:id="@+id/household_member"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/household_lbl"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/members_dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/frame_member1"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginEnd="20dp"
+                                android:innerRadius="0dp"
+                                android:shape="ring"
+                                app:cardCornerRadius="40dp"
+                                app:cardElevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/dp_member1"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/new_user" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/frame_member2"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginEnd="20dp"
+                                android:innerRadius="0dp"
+                                android:shape="ring"
+                                app:cardCornerRadius="40dp"
+                                app:cardElevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/dp_member2"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/new_user" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/frame_member3"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginEnd="20dp"
+                                android:innerRadius="0dp"
+                                android:shape="ring"
+                                app:cardCornerRadius="40dp"
+                                app:cardElevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/dp_member3"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/new_user" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/frame_member4"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginEnd="20dp"
+                                android:innerRadius="0dp"
+                                android:shape="ring"
+                                app:cardCornerRadius="40dp"
+                                app:cardElevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/dp_member4"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/new_user" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/frame_member5"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:innerRadius="0dp"
+                                android:shape="ring"
+                                app:cardCornerRadius="40dp"
+                                app:cardElevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/dp_member5"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/new_user" />
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                        <!-- Members' Name -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/members_dp">
+
+                            <TextView
+                                android:id="@+id/lbl_member1"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="20dp"
+                                android:fontFamily="@font/work_sans"
+                                android:text="member1"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/lbl_member2"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="20dp"
+                                android:fontFamily="@font/work_sans"
+                                android:text="member2"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/lbl_member3"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="20dp"
+                                android:fontFamily="@font/work_sans"
+                                android:text="member3"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/lbl_member4"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="20dp"
+                                android:fontFamily="@font/work_sans"
+                                android:text="member4"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/lbl_member5"
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/work_sans"
+                                android:text="member5"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+
+            <!-- User's Details -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingTop="0dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="0dp">
+
+                <!-- Display Name -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Display Name:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/dash_displayName"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="#C4C4C4"
+                    android:fontFamily="@font/work_sans"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10sp"
+                    android:paddingEnd="10sp"
+                    android:text="sample"
+                    android:textSize="19sp" />
+
+                <!-- Email -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Email:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/dash_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="#C4C4C4"
+                    android:fontFamily="@font/work_sans"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10sp"
+                    android:paddingEnd="10sp"
+                    android:text="sample@plantry.com"
+                    android:textSize="19sp" />
+
+                <!-- Household Owner -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:fontFamily="@font/work_sans"
+                    android:text="Household Owner:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/dash_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:background="#C4C4C4"
+                    android:fontFamily="@font/work_sans"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10sp"
+                    android:paddingEnd="10sp"
+                    android:text="123456"
+                    android:textSize="19sp" />
+
+                <!--Change Password Button-->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/change_pw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="52dp"
+                    android:background="#133B12"
+                    android:text="@string/change_my_password"
+                    android:textColor="#fff" />
+
+                <!--Log out-->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/log_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:background="#00000000"
+                    android:fontFamily="@font/work_sans_semibold"
+                    android:text="@string/log_out"
+                    android:textAllCaps="false"
+                    android:textColor="#C4C4C4"
+                    android:textSize="15sp"/>
+
+                <!--Contact us-->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/contact_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:background="#00000000"
+                    android:fontFamily="@font/work_sans"
+                    android:text="@string/contact_us"
+                    android:textAllCaps="false"
+                    android:textColor="#FF3939"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- TODO: Bottom nav bar: currently not clickable, might need on path listener -->
+    <!-- Bottom Nav Bar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp">
+
+        <!-- Main Frame -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/btm_nav_complete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="40dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            &lt;!&ndash; Nav Buttons &ndash;&gt;
+            <ImageButton
+                android:id="@+id/nav_maps"
+                android:layout_width="30sp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFF"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_nav_maps" />
+
+            <ImageButton
+                android:id="@+id/nav_list"
+                android:layout_width="30sp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFF"
+                android:src="@drawable/ic_nav_list" />
+
+            <ImageButton
+                android:id="@+id/nav_recipes"
+                android:layout_width="30sp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFF"
+                android:src="@drawable/ic_nav_recipe" />
+
+            <ImageButton
+                android:id="@+id/nav_notification"
+                android:layout_width="30sp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFF"
+                android:src="@drawable/ic_nav_notification" />
+        </LinearLayout>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
+
+

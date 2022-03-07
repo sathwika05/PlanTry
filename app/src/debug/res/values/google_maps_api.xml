@@ -1,0 +1,22 @@
+<resources>
+    <!--
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=E1:10:84:BF:DB:60:EA:F2:43:0C:E9:7D:B1:E3:18:19:3A:D0:81:46%3Bcom.example.plantry
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.example.plantry
+
+    SHA-1 certificate fingerprint:
+    E1:10:84:BF:DB:60:EA:F2:43:0C:E9:7D:B1:E3:18:19:3A:D0:81:46
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDg9zgZUg9IlzAcDtMbB_5_jq5Wzfx__1U</string>
+</resources>
